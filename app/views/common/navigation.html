@@ -1,0 +1,67 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul side-navigation class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+
+                <div class="profile-element" uib-dropdown>
+                  <img alt="image" class="img-circle" src="img/profile_small.jpg"/>
+                    <a uib-dropdown-toggle href>
+                            <span class="clear">
+                                <span class="block m-t-xs">
+                                    <strong class="font-bold">{{main.userName}}</strong>
+                             </span>
+                                <span class="text-muted text-xs block">menu<b class="caret"></b></span>
+                            </span>
+                    </a>
+                    <ul uib-dropdown-menu class="animated flipInX m-t-xs">
+                      <li><a ui-sref="app.profile">Profile</a></li>
+                      <li><a ui-sref="login">Login</a></li>
+                      <li><a ui-sref="mailbox.inbox">Mailbox</a></li>
+                      <li class="divider"></li>
+                        <li><a href="">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    LD+
+                </div>
+
+            </li>
+
+
+            <li ui-sref-active="active">
+                <a ui-sref="app.profile"><i class="fa fa-user"></i> <span class="nav-label">Profile</span></a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.projects"><i class="fa fa-tasks"></i> <span class="nav-label">Projects</span></a>
+            </li>
+            <li>
+
+
+          <li ui-sref-active="active">
+              <a ui-sref="app.clients"><i class="fa fa-users"></i> <span class="nav-label">Clients</span></a>
+              </li>
+              <li ui-sref-active="active">
+              <a ui-sref="app.activity_stream"><i class="fa fa-twitch"></i> <span class="nav-label">Activity</span></a>
+              </li>
+              <li ui-sref-active="active">
+              <a ui-sref="forms.wizard.step_one"><i class="fa fa-magic"></i> <span class="nav-label">Wizard</span></a>
+              </li>
+
+            </li>
+            <li>
+                <a href=""><i class="fa fa-file-text-o"></i><span class="nav-label">Notes</span></a>
+                <ul class="nav nav-third-level">
+
+                    <li ui-sref-active="active">
+                        <a ui-sref="index.main"><i class="fa fa-laptop"></i> <span class="nav-label">Main page</span> </a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a ui-sref="index.minor"><i class="fa fa-desktop"></i> <span class="nav-label">Minor page</span></a>
+                    </li>
+
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</nav>
