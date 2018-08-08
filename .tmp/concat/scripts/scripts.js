@@ -163,7 +163,7 @@ function config($stateProvider, $urlRouterProvider) {
             data: { pageTitle: 'Contacts 2' }
         })
         .state('app.profile', {
-            url: "/page",
+            url: "/profile",
             templateUrl: "views/profile_2.html",
             data: { pageTitle: 'Profile' }
         })
@@ -622,7 +622,7 @@ function pageTitle($rootScope, $timeout) {
                 // Default title - load on Dashboard 1
                 var title = 'LEGAL DOCS | Admin Area';
                 // Create your own title pattern
-                if (toState.data && toState.data.pageTitle) title = 'LEGAL DOCS | ' + toState.data.pageTitle;
+                if (toState.data && toState.data.pageTitle) title = 'Admin | ' + toState.data.pageTitle;
                 $timeout(function() {
                     element.text(title);
                 });
@@ -797,9 +797,9 @@ angular
  */
 function MainCtrl() {
 
-    this.userName = 'Jonathan Portelli';
-    this.helloText = 'Welcome to the SeedProject';
-    this.descriptionText = 'It is an application skeleton for a typical AngularJS web app. You can use it to quickly bootstrap your angular webapp projects and dev environment for these projects.';
+    this.userName = 'Marcus Halberg';
+    this.helloText = 'Welcome to Legal Docs +';
+    this.descriptionText = 'A legal document and case management system for legal professionals built on AngularJS as a web app.';
 
 };
 
